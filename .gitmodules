@@ -1,3 +1,0 @@
-[submodule "vendor/extensions/settings"]
-	path = vendor/extensions/settings
-	url = git://github.com/Squeegy/radiant-settings.git
