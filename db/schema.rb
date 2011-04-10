@@ -12,8 +12,9 @@
 ActiveRecord::Schema.define(:version => 20091003095744) do
 
   create_table "config", :force => true do |t|
-    t.string "key",   :limit => 40, :default => "", :null => false
-    t.string "value",               :default => ""
+    t.string "key",         :limit => 40, :null => false
+    t.string "value"
+    t.text   "description"
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
@@ -78,7 +79,7 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "snippets", :force => true do |t|
-    t.string   "name",          :limit => 100, :default => "", :null => false
+    t.string   "name",          :limit => 100,                :null => false
     t.string   "filter_id",     :limit => 25
     t.text     "content"
     t.datetime "created_at"
@@ -93,7 +94,7 @@ ActiveRecord::Schema.define(:version => 20091003095744) do
   create_table "users", :force => true do |t|
     t.string   "name",          :limit => 100
     t.string   "email"
-    t.string   "login",         :limit => 40,  :default => "",    :null => false
+    t.string   "login",         :limit => 40,                     :null => false
     t.string   "password",      :limit => 40
     t.datetime "created_at"
     t.datetime "updated_at"
