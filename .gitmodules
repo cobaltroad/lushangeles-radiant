@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/copy_move"]
+	path = vendor/extensions/copy_move
+	url = git://github.com/jomz/radiant-copy-move.git
