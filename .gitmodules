@@ -1,3 +1,0 @@
-[submodule "vendor/extensions/paperclipped"]
-	path = vendor/extensions/paperclipped
-	url = git://github.com/kbingman/paperclipped.git
