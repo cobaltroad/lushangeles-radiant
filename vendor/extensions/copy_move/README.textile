@@ -1,0 +1,68 @@
+h1. CopyMove
+
+  * Created by: Andrea Franz - http://gravityblast.com - andrea AT gravityblast DOT com
+  * Current version merged from other forks, refactored and extended by:  Andrew vonderLuft - avonderluft AT avlux DOT net
+
+h2. Description
+
+This extension adds a Copy/Move action to the Radiant Page Index administration interface near the 'Add child' button. With this extension you can copy or move a page with or without its children.
+
+h2. Updates
+
+* 2.3.x - 03/2011 - merged updates from other forks, refactored; Radiant 1.0 or greater - Andrew vonderLuft
+* 2.2.0 - 10/2010 - Radiant 0.9.1 compatible - Benny Degezelle
+
+h2. Installation
+
+h3. From the Radiant Extension Registry
+
+# From your RAILS_ROOT run:
+<pre>script/extension install copy_move</pre>
+# Restart your app
+NOTE: In some earlier versions of Radiant, the assets may not be copied and you may therefore need to run:
+<pre>rake radiant:extensions:copy_move:update</pre>
+
+h3. From Github
+
+# From your RAILS_ROOT run:
+<pre>cd vendor/extensions
+git clone git://github.com/jomz/radiant-copy-move.git ./copy_move
+cd ../../
+rake radiant:extensions:copy_move:update
+</pre>
+# Restart your app
+
+h3. Using the gem
+
+# Install the gem
+<pre>gem install radiant-copy_move-extension</pre>
+# Update your Radiant config:  add to environment.rb with the other gem.configs
+<pre>config.gem 'radiant-copy_move_-extension', :lib => false</pre>
+# Copy assets
+<pre>rake radiant:extensions:update_all</pre>
+# Restart your app
+
+h2. Requirements for very old versions (you really should upgrade)
+
+For Radiant versions < 0.6.7 You need the "shards extension":http://groups.google.com/group/radiantcms-dev/browse_frm/thread/d07f7fffd84b3ce0/5efa6fd6c2e1668e?lnk=gst&q=shards#5efa6fd6c2e1668e
+
+* Open the environment.rb and set shards as first extension to be loaded:
+  config.extensions = [ :shards, :textile_filter, :markdown_filter, :all ]
+
+Radiant versions >= 0.6.7 and greater have Shards built in.
+
+h2. Usage
+
+See the HELP.rdoc
+
+h2. Contributors
+
+ * Benny Degezelle
+ * Mario T. Lanza     
+ * Daniel Collis-Puro
+ * Sean Cribbs
+ * Andrew vonderLuft
+ 
+h2. Credits
+
+This extension contains icons from the FamFamFam Silk icon set. See http://famfamfam.com/

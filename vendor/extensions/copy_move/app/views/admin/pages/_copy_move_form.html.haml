@@ -1,0 +1,20 @@
+- status_msg = "#{self.request.path_parameters[:action].humanize} is being performed on #{@page.title} page ..."
+- form_tag self.request.path_parameters, :method => :post, 'data-onsubmit_status' => status_msg  do
+  %p
+    %label= "Page: #{@page.title} ( #{@page.path} )"
+  %p
+    %label= "Parent: #{@page.parent.title} ( #{@page.parent.path} )"
+  %hr
+  %p
+    %label{:for => 'parent_id'} 
+      New parent:
+      = page_parent_select_tag
+  %p
+    %label{:for => 'status_id'} 
+      New status:
+      = select_tag "status_id", options_for_select(Status.find_all.map{ |s| [s.name, s.id] }.unshift(['Use the same status', nil]))
+
+  %p.buttons
+    = submit_tag "OK"
+    = t('or')
+    = link_to_function t('cancel'), "$(this).closePopup();"

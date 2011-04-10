@@ -1,0 +1,26 @@
+de:
+  copy_move:
+    button: "Copy/Move"
+    copy_or_move_page: "Copy or Move Page"
+    copy_page: "Copy Page"
+    copy_page_only: "Copy Page Only"
+    copy_page_description: "This will create a copy of this single page under a new parent"
+    copy_whole_subtree: "Copy Whole Subtree"
+    copy_tree_description: "This will create a copy of this page and all its descendants under a new parent"
+    move_entire_subtree: "Move Entire Subtree"
+    move_tree_description: "This will move this page and all its descendants under a new parent"
+    move_page: "Move Page"
+    move_page_description: "This will move this page under a new parent"
+    copy_with_first_level_children: "Copy With First-level Children"
+    copy_children_description: "This will create a copy of this page and its immediate first-level children under a new parent"
+
+    copied:
+      'Eine Kopie von <strong>{{page}}</strong> wurde unterhalb von <strong>{{parent}}</strong> erstellt.'
+    moved:
+      'Page <strong>{{page}}</strong> was moved under <strong>{{parent}}</strong>.'
+    immediate_children_copied:
+      'Eine Kopie der Seite <strong>{{page}}</strong> sowie der unmittelbaren Unterseiten wurde unter <strong>{{parent}}</strong> erstellt.'
+    descendants_copied:
+      'Eine Kopie der Seite <strong>{{page}}</strong> sowie aller Unterseiten wurde unter <strong>{{parent}}</strong> erstellt.'
+    descendants_moved:
+      'Die Seite <strong>{{page}}</strong> und alle Unterseiten wurden verschoben in <strong>{{parent}}</strong>.'
