@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/vapor"]
+	path = vendor/extensions/vapor
+	url = git://github.com/saturnflyer/radiant-vapor-extension.git
