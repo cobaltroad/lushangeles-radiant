@@ -1,3 +1,0 @@
-[submodule "vendor/extensions/page_preview"]
-	path = vendor/extensions/page_preview
-	url = http://github.com/tricycle/radiant-page-preview-extension.git
