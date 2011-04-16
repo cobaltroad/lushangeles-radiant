@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/custom_fields"]
+	path = vendor/extensions/custom_fields
+	url = git://github.com/Aissac/radiant-custom-fields-extension.git
