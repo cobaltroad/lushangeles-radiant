@@ -1,0 +1,10 @@
+- unless @page.virtual?
+  %tr
+    %td
+    %td
+      = f.check_box :sitemap, {@page.new_record? && :checked => 'checked'}
+      = f.label :sitemap, t('appear_in_sitemap')
+      = f.select :change_frequency, SitemapXmlExtension::CHANGE_FREQUENCY_OPTIONS, {@page.new_record? && :selected => "weekly"}, :style => "margin-left:3%"
+      = f.label t('change_frequency')
+      = f.select :priority, SitemapXmlExtension::FREQUENCY_OPTIONS, {@page.new_record? && :selected => "0.5"}, :style => "margin-left:3%"
+      = f.label t('priority')
